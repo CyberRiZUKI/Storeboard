@@ -138,31 +138,6 @@ body {
     display: none;
 }
 
-/* Responsive Design for New Header */
-@media (max-width: 1024px) {
-    .page-header {
-        padding: 15px 30px;
-    }
-
-    .header-left h1 {
-        font-size: 1.3rem;
-    }
-
-    .header-right {
-        gap: 20px;
-    }
-
-    .header-nav {
-        gap: 10px;
-    }
-
-    .header-nav-link {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
-}
-
 
 /* Navigation Bar */
 .navigation {
@@ -210,7 +185,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: #ff6b35; /* Orange underline */
+    background: #ff6b35;
 }
 
 /* ===== ABOUT PAGE STYLES ===== */
@@ -822,13 +797,31 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    transition: opacity 0.4s ease;
+    background: #fefdf8;
+    transition: left 0.4s ease;
+    transform: translateX(0);
     z-index: 1;
 }
 
 .gallery-item:hover::before {
+    left: -100%;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1;
 }
 
 .gallery-date,
@@ -836,13 +829,12 @@ body {
     position: relative;
     z-index: 2;
     color: #1a1a1a;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
 .gallery-item:hover .gallery-date,
 .gallery-item:hover .gallery-title {
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 /*Photoviewer part*/
