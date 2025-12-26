@@ -1,0 +1,26 @@
+{
+  "photos": [
+    {
+      "id": "sunset-beach",
+      "title": "Sunset at the beach - Golden hour magic",
+      "date": "2025-12-20",
+      "image": "tester.jpg",
+      "link": "photos/sunset-beach.html"
+    },
+    {
+      "id": "city-lights",
+      "title": "City lights at night - Urban exploration",
+      "date": "2025-12-15",
+      "image": "PHOTO/tester2.jpg",
+      "link": "photos/city-lights.html"
+    },
+    {
+      "id": "2025_08_Kansai",
+      "title": "Kansai Trip 2025",
+      "folder": "2025_08_Kansai",
+      "date": "2025-08-25",
+      "image": "PHOTO/2025_08_Kansai/IMG_20250821_173251.jpg",
+      "link": "PHOTO/2025_08_Kansai/2025_08_Kansai.html"
+    }
+  ]
+}
